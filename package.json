@@ -11,13 +11,23 @@
       "types": "./build/index.d.ts"
     }
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "keywords": ["l402", "lightning", "nostr", "discovery", "toll-booth", "402", "paid-api"],
+  "keywords": [
+    "l402",
+    "lightning",
+    "nostr",
+    "discovery",
+    "toll-booth",
+    "402",
+    "paid-api"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -35,8 +45,12 @@
     }
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
     "@thecryptodonkey/toll-booth": "^3.4.0",
     "@types/node": "^22.0.0",
+    "semantic-release": "^25.0.3",
     "typescript": "^5.7.0",
     "vitest": "^4.0.0"
   }
