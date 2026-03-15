@@ -1,0 +1,43 @@
+{
+  "name": "toll-booth-announce",
+  "version": "0.1.0",
+  "description": "Bridge between @thecryptodonkey/toll-booth and 402-announce — announce your toll-booth service on Nostr for decentralised paid API discovery",
+  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "types": "./build/index.d.ts"
+    }
+  },
+  "files": ["build"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["l402", "lightning", "nostr", "discovery", "toll-booth", "402", "paid-api"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCryptoDonkey/toll-booth-announce.git"
+  },
+  "dependencies": {
+    "402-announce": "^1.2.0"
+  },
+  "peerDependencies": {
+    "@thecryptodonkey/toll-booth": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@thecryptodonkey/toll-booth": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@thecryptodonkey/toll-booth": "^3.4.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.0"
+  }
+}
