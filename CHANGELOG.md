@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/TheCryptoDonkey/toll-booth-announce/compare/v1.0.0...v1.1.0) (2026-03-16)
+
+
+### Features
+
+* auto-derive payment methods from booth config (xcashu + lightning) ([a90994c](https://github.com/TheCryptoDonkey/toll-booth-announce/commit/a90994c2b4f1a631ebfcef72ddeaaa6286648406))
+
 # 1.0.0 (2026-03-15)
 
 
