@@ -3,7 +3,8 @@
 > Bridge between toll-booth (L402 middleware) and 402-announce (Nostr service discovery)
 
 toll-booth-announce maps your toll-booth configuration to a kind 31402 Nostr event,
-automatically announcing your paid API for decentralised discovery.
+automatically announcing your paid API for decentralised discovery. It publishes a signed Nostr
+event (kind 31402, the HTTP service descriptor) with multi-transport URLs for censorship resistance.
 
 ## When to Use
 
@@ -13,6 +14,8 @@ and clients to discover it on Nostr relays.
 ## Install
 
 npm install toll-booth-announce
+
+**Peer dependency:** Requires @thecryptodonkey/toll-booth (the L402 middleware) alongside this package.
 
 ## Quick Start
 
