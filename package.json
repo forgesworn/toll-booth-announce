@@ -42,7 +42,7 @@
     "402-announce": "^2.0.0"
   },
   "peerDependencies": {
-    "@forgesworn/toll-booth": "^3.0.0"
+    "@forgesworn/toll-booth": "^4.0.0"
   },
   "peerDependenciesMeta": {
     "@forgesworn/toll-booth": {
@@ -50,11 +50,11 @@
     }
   },
   "devDependencies": {
+    "@forgesworn/toll-booth": "^4.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^12.0.6",
-    "@forgesworn/toll-booth": "^3.4.0",
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.12.0",
     "semantic-release": "^25.0.3",
     "typescript": "^5.7.0",
     "vitest": "^4.0.0"
