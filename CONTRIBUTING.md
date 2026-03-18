@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/TheCryptoDonkey/toll-booth-announce.git
+git clone https://github.com/forgesworn/toll-booth-announce.git
 cd toll-booth-announce
 pnpm install
 pnpm build

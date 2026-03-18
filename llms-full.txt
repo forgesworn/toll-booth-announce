@@ -79,10 +79,10 @@ handle.close()
 ## Dependencies
 
 - 402-announce (runtime) — Nostr event building and publishing
-- @thecryptodonkey/toll-booth (peer) — toll-booth types
+- @forgesworn/toll-booth (peer) — toll-booth types
 
 ## Related
 
-- toll-booth: L402/xcashu payment middleware (npm: @thecryptodonkey/toll-booth)
+- toll-booth: L402/xcashu payment middleware (npm: @forgesworn/toll-booth)
 - 402-announce: Low-level Nostr announcement library (npm: 402-announce)
 - 402-mcp: MCP server for AI agent discovery and payment

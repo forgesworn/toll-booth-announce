@@ -1,8 +1,8 @@
 # toll-booth-announce
 
-Announce your [toll-booth](https://github.com/TheCryptoDonkey/toll-booth) service on Nostr for decentralised paid API discovery.
+Announce your [toll-booth](https://github.com/forgesworn/toll-booth) service on Nostr for decentralised paid API discovery.
 
-Publishes a [kind 31402](https://github.com/TheCryptoDonkey/402-announce) event so AI agents and clients can find your API without a centralised registry.
+Publishes a [kind 31402](https://github.com/forgesworn/402-announce) event so AI agents and clients can find your API without a centralised registry.
 
 ## Install
 
@@ -13,8 +13,8 @@ npm install toll-booth-announce 402-announce
 ## Usage
 
 ```typescript
-import { Booth } from '@thecryptodonkey/toll-booth'
-import { phoenixdBackend } from '@thecryptodonkey/toll-booth/backends/phoenixd'
+import { Booth } from '@forgesworn/toll-booth'
+import { phoenixdBackend } from '@forgesworn/toll-booth/backends/phoenixd'
 import { announce } from 'toll-booth-announce'
 
 // Your existing toll-booth config
@@ -91,7 +91,7 @@ This is one of several bridges that publish kind 31402 events for paid API disco
 - **toll-booth-announce** — for toll-booth services (TypeScript)
 - **aperture-announce** — for Lightning Labs Aperture proxies (Go)
 
-Any client querying Nostr for kind 31402 events can discover your service. See [402-mcp](https://github.com/TheCryptoDonkey/402-mcp) for an AI agent that does this automatically.
+Any client querying Nostr for kind 31402 events can discover your service. See [402-mcp](https://github.com/forgesworn/402-mcp) for an AI agent that does this automatically.
 
 ## Licence
 

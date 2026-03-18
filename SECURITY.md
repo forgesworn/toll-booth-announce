@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-If you discover a security vulnerability in toll-booth-announce, please report it responsibly via [GitHub Security Advisories](https://github.com/TheCryptoDonkey/toll-booth-announce/security/advisories/new).
+If you discover a security vulnerability in toll-booth-announce, please report it responsibly via [GitHub Security Advisories](https://github.com/forgesworn/toll-booth-announce/security/advisories/new).
 
 Do **not** open a public issue for security vulnerabilities.
 

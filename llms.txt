@@ -15,7 +15,7 @@ and clients to discover it on Nostr relays.
 
 npm install toll-booth-announce
 
-**Peer dependency:** Requires @thecryptodonkey/toll-booth (the L402 middleware) alongside this package.
+**Peer dependency:** Requires @forgesworn/toll-booth (the L402 middleware) alongside this package.
 
 ## Quick Start
 

@@ -36,7 +36,7 @@ Requires `402-announce` as a sibling directory (`file:../402-announce` in packag
 - Commit messages: `type: description` (feat:, fix:, docs:, refactor:)
 - No Co-Authored-By lines in commits
 - Semantic-release auto-publishes on push to main — do not manually bump version
-- Peer dependency on @thecryptodonkey/toll-booth — keep BoothConfigLike minimal to avoid tight coupling
+- Peer dependency on @forgesworn/toll-booth — keep BoothConfigLike minimal to avoid tight coupling
 
 ## Key design decisions
 
