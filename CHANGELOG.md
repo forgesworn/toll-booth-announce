@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/forgesworn/toll-booth-announce/compare/v1.1.0...v1.2.0) (2026-03-18)
+
+
+### Bug Fixes
+
+* update 402-announce to v2 for structured paymentMethods ([91e8345](https://github.com/forgesworn/toll-booth-announce/commit/91e834535fca2a266685e08c4149c843f4de7f93))
+* use npm version of 402-announce instead of file reference ([e0adc31](https://github.com/forgesworn/toll-booth-announce/commit/e0adc31a47b5e7f8fb192017e192dbc995726801))
+
+
+### Features
+
+* rename url to urls field in bridge ([d4ef2db](https://github.com/forgesworn/toll-booth-announce/commit/d4ef2dbf4e9a6b1bcdfd8d50a6edce8c4eba7114))
+
 # [1.1.0](https://github.com/TheCryptoDonkey/toll-booth-announce/compare/v1.0.0...v1.1.0) (2026-03-16)
 
 
