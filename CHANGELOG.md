@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/forgesworn/toll-booth-announce/compare/v1.2.1...v1.3.0) (2026-03-24)
+
+
+### Features
+
+* auto-derive IETF Payment method from ietfPayment config ([91c5b09](https://github.com/forgesworn/toll-booth-announce/commit/91c5b09f4fbef1e52f51b4533ba669e6ba2dcc0f))
+
 ## [1.2.1](https://github.com/forgesworn/toll-booth-announce/compare/v1.2.0...v1.2.1) (2026-03-20)
 
 
