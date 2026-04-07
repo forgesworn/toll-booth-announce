@@ -21,6 +21,7 @@ interface BoothConfigLike {
   serviceName?: string
   hasBackend?: boolean
   xcashu?: { mints: string[] }
+  ietfPayment?: { realm: string }
 }
 
 ### TollBoothAnnounceOptions
@@ -49,6 +50,7 @@ toll-booth-announce extracts pricing from three formats:
 
 When paymentMethods is not provided:
 - hasBackend: true → includes ['l402', 'lightning']
+- ietfPayment configured → includes ['payment', 'lightning']
 - xcashu configured → includes ['xcashu']
 - User-provided paymentMethods override all auto-derivation
 
