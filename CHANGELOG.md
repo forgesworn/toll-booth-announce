@@ -7,6 +7,14 @@
 
 # [1.3.0](https://github.com/forgesworn/toll-booth-announce/compare/v1.2.1...v1.3.0) (2026-03-24)
 
+## 1.3.2 (2026-04-12)
+
+### Bug Fixes
+
+- pin vite to ^8.0.8, bump picomatch and sjcl (security) (deps)
+
+
+
 
 ### Features
 
