@@ -9,9 +9,12 @@ importers:
   .:
     dependencies:
       402-announce:
-        specifier: file:../402-announce
-        version: file:../402-announce(typescript@5.9.3)
+        specifier: ^2.0.0
+        version: 2.1.0(typescript@5.9.3)
     devDependencies:
+      '@forgesworn/toll-booth':
+        specifier: ^4.0.0
+        version: 4.5.1(vue@3.5.30(typescript@5.9.3))
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
@@ -21,12 +24,9 @@ importers:
       '@semantic-release/github':
         specifier: ^12.0.6
         version: 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
-      '@thecryptodonkey/toll-booth':
-        specifier: ^3.4.0
-        version: 3.4.0(vue@3.5.30(typescript@5.9.3))
       '@types/node':
-        specifier: ^22.0.0
-        version: 22.19.15
+        specifier: ^24.12.0
+        version: 24.12.2
       semantic-release:
         specifier: ^25.0.3
         version: 25.0.3(typescript@5.9.3)
@@ -35,12 +35,12 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^4.0.0
-        version: 4.1.0(@types/node@22.19.15)(vite@8.0.0(@types/node@22.19.15))
+        version: 4.1.0(@types/node@24.12.2)(vite@8.0.0(@types/node@24.12.2))
 
 packages:
 
-  402-announce@file:../402-announce:
-    resolution: {directory: ../402-announce, type: directory}
+  402-announce@2.1.0:
+    resolution: {integrity: sha512-ohDwYTzqZOo68nkJvT3I+C+utrmEbldzJjKbVufWTeOPukaLC4roj0RPsUBZZknBTD1/A47pUXJGt+JJVH3YRg==}
     engines: {node: '>=18'}
 
   '@actions/core@3.0.0':
@@ -76,6 +76,10 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
+  '@cashu/cashu-ts@3.6.3':
+    resolution: {integrity: sha512-xP9jZkZEd2JD5UBGOebBsDSPykEJJo6xmG3MXQMOwizmN115atzHJgKvaBVFwOT2HPW5+1EMXfp4jpUd/5wEjQ==}
+    engines: {node: '>=22.4.0'}
+
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
@@ -88,6 +92,18 @@ packages:
 
   '@emnapi/wasi-threads@1.2.0':
     resolution: {integrity: sha512-N10dEJNSsUx41Z6pZsXU8FjPjpBEplgH24sfkmITrBED1/U2Esum9F3lfLrMjKHHjmi557zQn7kR9R+XWXu5Rg==}
+
+  '@forgesworn/toll-booth@4.5.1':
+    resolution: {integrity: sha512-oCthOXbjrpiCsAC2d4W5+xZULXUAw29X6Q3uABHJSC3o3jYEVAxRkJ2Y+e6xuoZjwXKewBoTQfyuHho7CS3ubw==}
+    hasBin: true
+    peerDependencies:
+      express: ^4.0.0 || ^5.0.0
+      hono: ^4.0.0
+    peerDependenciesMeta:
+      express:
+        optional: true
+      hono:
+        optional: true
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -360,18 +376,6 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@thecryptodonkey/toll-booth@3.4.0':
-    resolution: {integrity: sha512-iUsaoBt5dtp9WhXGfIg9ZM8YQSjl8AIqZv2DnPlp99ELOFKhWaBYgDzoOpzEfbIEmqG+V8W4ZU/zuPYGSnzV7A==}
-    hasBin: true
-    peerDependencies:
-      express: ^4.0.0 || ^5.0.0
-      hono: ^4.0.0
-    peerDependenciesMeta:
-      express:
-        optional: true
-      hono:
-        optional: true
-
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
 
@@ -384,8 +388,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@22.19.15':
-    resolution: {integrity: sha512-F0R/h2+dsy5wJAUe3tAU6oqa2qbWY5TpNfL/RGmo1y38hiyO1w3x2jPtt76wmuaJI4DQnOBu21cNXQ2STIUUWg==}
+  '@types/node@24.12.2':
+    resolution: {integrity: sha512-A1sre26ke7HDIuY/M23nd9gfB+nrmhtYyMINbjI1zHJxYteKR6qSMX56FsmjMcDb3SMcjJg5BiRRgOCC/yBD0g==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -506,8 +510,9 @@ packages:
   before-after-hook@4.0.0:
     resolution: {integrity: sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ==}
 
-  better-sqlite3@11.10.0:
-    resolution: {integrity: sha512-EwhOpyXiOEL/lKzHz9AW1msWFNzGc/z+LzeB3/jnFJpxu+th2yqvzsSWas1v9jgs9+xiXJcD5A8CJxAG2TaghQ==}
+  better-sqlite3@12.8.0:
+    resolution: {integrity: sha512-RxD2Vd96sQDjQr20kdP+F+dK/1OUNiVOl200vKBZY8u0vTwysfolF6Hq+3ZK2+h8My9YvZhHsF+RSGZW2VYrPQ==}
+    engines: {node: 20.x || 22.x || 23.x || 24.x || 25.x}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -1219,8 +1224,8 @@ packages:
     resolution: {integrity: sha512-z9nC87iaZXXySbWWtTHfCFJyFvKaUAW6lODhikG7ILSbVgmwuFjUqkgnheHvAUcGedO29e2QGBRXMUD64aurqQ==}
     engines: {node: '>=20'}
 
-  nostr-core@0.4.0:
-    resolution: {integrity: sha512-AMCViEhDRebRLa+iVGViV4f5RDp+0Xr6QuSzkNIVydA/eXISXw/R7Sjx9LoN3WyVosgVWSYtWcaEFFVJc8iY3Q==}
+  nostr-core@0.7.0:
+    resolution: {integrity: sha512-KKZXiYrJiHg3F4PggSe9l2Za3qMsQllYY6N+xDMr/px+kgTG8KfZ6GK6zKxf/kxVgDZARpe2yEvynH49wKXdXg==}
 
   nostr-tools@2.23.3:
     resolution: {integrity: sha512-AALyt9k8xPdF4UV2mlLJ2mgCn4kpTB0DZ8t2r6wjdUh6anfx2cTVBsHUlo9U0EY/cKC5wcNyiMAmRJV5OVEalA==}
@@ -1793,8 +1798,8 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
   undici@6.24.1:
     resolution: {integrity: sha512-sC+b0tB1whOCzbtlx20fx3WgCXwkW627p4EA9uM+/tNNPkSS+eSEld6pAs9nDv7WbY1UUljBMYPtu9BCOrCWKA==}
@@ -2002,7 +2007,7 @@ packages:
 
 snapshots:
 
-  402-announce@file:../402-announce(typescript@5.9.3):
+  402-announce@2.1.0(typescript@5.9.3):
     dependencies:
       nostr-tools: 2.23.3(typescript@5.9.3)
     transitivePeerDependencies:
@@ -2043,6 +2048,13 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
+  '@cashu/cashu-ts@3.6.3':
+    dependencies:
+      '@noble/curves': 2.0.1
+      '@noble/hashes': 2.0.1
+      '@scure/base': 2.0.0
+      '@scure/bip32': 2.0.1
+
   '@colors/colors@1.5.0':
     optional: true
 
@@ -2061,6 +2073,16 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@forgesworn/toll-booth@4.5.1(vue@3.5.30(typescript@5.9.3))':
+    dependencies:
+      '@cashu/cashu-ts': 3.6.3
+      better-sqlite3: 12.8.0
+      macaroon: 3.0.4
+      nostr-core: 0.7.0(vue@3.5.30(typescript@5.9.3))
+      qrcode: 1.5.4
+    transitivePeerDependencies:
+      - vue
 
   '@iconify/types@2.0.0': {}
 
@@ -2342,15 +2364,6 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@thecryptodonkey/toll-booth@3.4.0(vue@3.5.30(typescript@5.9.3))':
-    dependencies:
-      better-sqlite3: 11.10.0
-      macaroon: 3.0.4
-      nostr-core: 0.4.0(vue@3.5.30(typescript@5.9.3))
-      qrcode: 1.5.4
-    transitivePeerDependencies:
-      - vue
-
   '@tybys/wasm-util@0.10.1':
     dependencies:
       tslib: 2.8.1
@@ -2365,9 +2378,9 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@22.19.15':
+  '@types/node@24.12.2':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.16.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -2380,13 +2393,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.0(vite@8.0.0(@types/node@22.19.15))':
+  '@vitest/mocker@4.1.0(vite@8.0.0(@types/node@24.12.2))':
     dependencies:
       '@vitest/spy': 4.1.0
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.0(@types/node@22.19.15)
+      vite: 8.0.0(@types/node@24.12.2)
 
   '@vitest/pretty-format@4.1.0':
     dependencies:
@@ -2510,7 +2523,7 @@ snapshots:
 
   before-after-hook@4.0.0: {}
 
-  better-sqlite3@11.10.0:
+  better-sqlite3@12.8.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
@@ -3162,13 +3175,15 @@ snapshots:
 
   normalize-url@9.0.0: {}
 
-  nostr-core@0.4.0(vue@3.5.30(typescript@5.9.3)):
+  nostr-core@0.7.0(vue@3.5.30(typescript@5.9.3)):
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.30(typescript@5.9.3))
       '@noble/ciphers': 1.3.0
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
+      '@scure/bip32': 2.0.1
+      '@scure/bip39': 2.0.1
     transitivePeerDependencies:
       - vue
 
@@ -3694,7 +3709,7 @@ snapshots:
   uglify-js@3.19.3:
     optional: true
 
-  undici-types@6.21.0: {}
+  undici-types@7.16.0: {}
 
   undici@6.24.1: {}
 
@@ -3725,7 +3740,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@8.0.0(@types/node@22.19.15):
+  vite@8.0.0(@types/node@24.12.2):
     dependencies:
       '@oxc-project/runtime': 0.115.0
       lightningcss: 1.32.0
@@ -3734,13 +3749,13 @@ snapshots:
       rolldown: 1.0.0-rc.9
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.15
+      '@types/node': 24.12.2
       fsevents: 2.3.3
 
-  vitest@4.1.0(@types/node@22.19.15)(vite@8.0.0(@types/node@22.19.15)):
+  vitest@4.1.0(@types/node@24.12.2)(vite@8.0.0(@types/node@24.12.2)):
     dependencies:
       '@vitest/expect': 4.1.0
-      '@vitest/mocker': 4.1.0(vite@8.0.0(@types/node@22.19.15))
+      '@vitest/mocker': 4.1.0(vite@8.0.0(@types/node@24.12.2))
       '@vitest/pretty-format': 4.1.0
       '@vitest/runner': 4.1.0
       '@vitest/snapshot': 4.1.0
@@ -3757,10 +3772,10 @@ snapshots:
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
-      vite: 8.0.0(@types/node@22.19.15)
+      vite: 8.0.0(@types/node@24.12.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 22.19.15
+      '@types/node': 24.12.2
     transitivePeerDependencies:
       - msw
 
