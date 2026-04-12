@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/forgesworn/toll-booth-announce/compare/v1.3.0...v1.3.1) (2026-04-12)
+
+
+### Bug Fixes
+
+* resolve development dependency vulnerabilities ([82ed8be](https://github.com/forgesworn/toll-booth-announce/commit/82ed8be6fa55488595d82d53bc43fe818ade1561))
+
 # [1.3.0](https://github.com/forgesworn/toll-booth-announce/compare/v1.2.1...v1.3.0) (2026-03-24)
 
 
