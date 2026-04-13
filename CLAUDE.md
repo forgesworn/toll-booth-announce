@@ -35,7 +35,7 @@ Requires `402-announce` as a sibling directory (`file:../402-announce` in packag
 - British English (colour, behaviour, licence, decentralised)
 - Commit messages: `type: description` (feat:, fix:, docs:, refactor:)
 - No Co-Authored-By lines in commits
-- Semantic-release auto-publishes on push to main — do not manually bump version
+- `forgesworn/anvil@v0` auto-publishes on push to main — `auto-release.yml` bumps the version and creates a GitHub Release; `release.yml` runs pre-publish gates and publishes to npm via OIDC. Do not manually bump version.
 - Peer dependency on @forgesworn/toll-booth — keep BoothConfigLike minimal to avoid tight coupling
 
 ## Key design decisions
