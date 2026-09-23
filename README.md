@@ -38,7 +38,7 @@ const booth = new Booth(config)
 const announcement = await announce(config, {
   secretKey: process.env.NOSTR_SK,
   relays: ['wss://relay.damus.io', 'wss://relay.primal.net'],
-  urls: ['https://jokes.trotters.dev'],
+  urls: ['https://jokes.forgesworn.dev'],
   about: 'Lightning-paid joke API — cracker, standard, and premium jokes',
   paymentMethods: [['l402', 'lightning']],
   topics: ['jokes', 'humour', 'bitcoin', 'lightning'],
@@ -57,7 +57,7 @@ const announcement = await announce(config, {
   secretKey: process.env.NOSTR_SK,
   relays: ['wss://relay.damus.io', 'wss://relay.primal.net'],
   urls: [
-    'https://jokes.trotters.dev',          // clearnet
+    'https://jokes.forgesworn.dev',          // clearnet
     'http://jokesxyz...onion',             // Tor hidden service
   ],
   about: 'Lightning-paid joke API — cracker, standard, and premium jokes',

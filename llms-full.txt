@@ -68,7 +68,7 @@ const handle = await announce(
   {
     secretKey: process.env.NOSTR_SECRET_KEY!,
     relays: ['wss://relay.damus.io', 'wss://relay.primal.net'],
-    urls: ['https://jokes.trotters.dev'],
+    urls: ['https://jokes.forgesworn.dev'],
     about: 'A joke-telling API behind an L402 paywall',
     topics: ['comedy', 'ai'],
   },
